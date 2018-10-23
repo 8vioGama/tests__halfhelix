@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+  head
+    block title
+      title Module_test
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name='description' content='Module_test - Scaffolded with Pixel2HTML Frontend Generator')
+    meta(name='theme-color', content='#3e456c')
+    link(rel='manifest' href='assets/head/manifest.json')
+    link(rel="shortcut icon" href="assets/head/favico.ico")
+    link(rel="icon" type="image/png" href="assets/head/favicon.png")
+
+    link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css")
+    link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css")
+
+    if production
+      link(rel='stylesheet', href='assets/css/vendor.min.css')
+      link(rel='stylesheet', href='assets/css/main.min.css')
+    else
+      link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto")
+      link(rel='stylesheet', href='assets/css/vendor.css')
+      link(rel='stylesheet', href='assets/css/main.css')
+
+  body
+    include includes/mixins
+    include general/menu
+    include main/hero
+    include main/features
+    include main/pricing
+    include main/sponsors
+
+    //- block content
+      //- This gets replaced by content per page
+
+    include general/footer
+
+    if production
+      script(src='//code.jquery.com/jquery-3.3.1.min.js')
+    script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js")
+    script(src='assets/js/main.js')

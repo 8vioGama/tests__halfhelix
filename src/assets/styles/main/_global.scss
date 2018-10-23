@@ -1,0 +1,50 @@
+body {
+  background: $white--dark;
+}
+
+section {
+  padding-top: 3rem;
+  
+  @media screen and (min-width: $md) {
+    padding: 3rem 0px;
+  } 
+}
+
+.wrapper {
+  max-width: 85vw; 
+  margin: auto;
+}
+
+.margin--auto {
+  margin: auto;
+}
+
+.padding--cero {
+  padding: 0;
+}
+
+.bg--white {
+  background-color: $white;
+}
+
+.bg--blue-light {
+  background-color: $blue--light;
+}
+
+.opacity--6 {
+  opacity: .6;
+}
+
+.opacity--7 {
+  opacity: .7;
+}
+
+.z-front {
+  position: relative;
+  z-index: 999999;
+}
+
+.z-back {
+  position: relative;
+  z-index: 1;
+}

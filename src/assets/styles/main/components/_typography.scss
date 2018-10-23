@@ -1,0 +1,92 @@
+// Types
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  font-size: .8rem;
+}
+
+// Sizes
+.text--sm {
+  font-size: .75rem;
+}
+
+.text--md {
+  font-size: 1rem;
+}
+
+.text--lg {
+  font-size: 1.12rem;
+}
+
+// Weights
+.weight--300 {
+  font-weight: 300;
+}
+
+.weight--600 {
+  font-weight: 600;
+}
+
+// Colors
+.color--grey {
+  color: $grey;
+}
+
+.color--grey-light {
+  color: $grey--light;
+}
+
+.color--grey-dark {
+  color: $grey--dark;
+} 
+
+.color--blue {
+  color: $blue;
+}
+
+.color--black {
+  color: $black;
+}
+
+.color--white {
+  color: $white;
+}
+
+// Responsive
+@media screen and (min-width: $xs) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (min-width: $sm) {
+  .title {
+    font-size: 2.6rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .title {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .title {
+    font-size: 3.25rem;
+  }
+}

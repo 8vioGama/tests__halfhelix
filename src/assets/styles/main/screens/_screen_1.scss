@@ -1,0 +1,257 @@
+// Hero
+.hero {
+  padding: 12rem 0 0;
+
+  .hero__image {
+    padding: 2rem 0;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .hero__tasks {
+
+    .hero__task {
+      margin-bottom: 2rem;
+    }
+
+    .hero__icon-text {
+      
+      p {
+        padding: 0.5rem 0;
+        margin: 0;
+      }
+
+      @media screen and (max-width: $md) {
+        span {
+          font-size: .9rem;
+        }
+      
+        span {
+          font-size: .8rem;
+        }
+      }
+    }
+
+    .hero__icon {
+      
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// Features 
+
+.features {
+  .features__image {
+
+    img {
+      position: absolute;
+      left: -8vw;
+      padding: 0;
+      max-width: 40rem;
+      width: 100%;
+    }
+  }
+
+  .features__carousel-container {
+    padding: 5em 0;
+    
+    .features__carousel-title {
+      font-size: 2rem;
+    }
+
+    .features__carousel-text {
+      font-size: 1rem;
+      padding: 1rem 15px;
+    }
+
+    .features__carousel-link {
+      font-size: 1rem;
+      padding-bottom: 2rem;
+
+      &:after {
+        content: '';
+        border: solid $blue;
+        border-width: 0 1px 1px 0;
+        display: inline-block;
+        padding: 4px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        margin-left: 1rem;
+      }
+    }
+    
+    ul.slick-dots {
+
+      li.slick-active {
+        color: $grey--light;
+
+        button:before {
+          color: $blue;
+          font-size: 10px;
+        }
+      }
+
+      @media screen and (min-width: $md) {
+        text-align: left;
+      }
+    }
+
+    .slick-next {
+      right: -1rem;
+
+      &:before {
+        border: solid $grey--light;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+      }
+    }
+
+    .slick-prev {
+      left: -1.5rem;
+
+      @media screen and (min-width: $md) {
+        left: -5rem;
+      }
+
+      &:before {
+        border: solid $grey--light;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+      }
+    }
+  }
+}
+
+.pricing {
+
+  .pricing__subtitle {
+    padding: 1rem 0 3rem;
+  }
+
+  .pricing__prices {
+    padding: 0;
+    box-shadow: 1px 2px 3px 0 #0003;
+  }
+
+  .pricing__price {
+    padding: 1.5rem 1rem;
+    border-bottom: 2px solid $grey--lighter;
+
+    &:nth-child(2) {
+      border-left: solid #e1e8ee 1px;
+      border-right: solid #e1e8ee 1px;
+    }
+
+    &:last-child {
+      border: none;
+    }
+    @media screen and (min-width: $lg) {
+      border-bottom: none;
+    }
+  }
+
+  .pricing__price-amount {
+    padding-top: 2rem;
+  }
+
+  .pricing__price-description {
+    @media screen and (min-width: $sm) {
+      min-height: 5rem;
+    }
+  }
+
+  .pricing__price-body{
+
+    &.pricing__price-alt{
+      &::before, &::after {
+        opacity: .2;
+      }
+    }
+
+    &:before {
+      content: '';
+      border-bottom: 1px solid $grey--lighter;
+      display: block;
+    }
+
+    &:after {
+      content: '';
+      border-top: 1px solid $grey--lighter;
+      display: block;
+      padding: .5rem;
+    }
+  }
+
+  .pricing__price-features {
+    padding: 2rem 0;
+  }
+
+  .pricing__price-feature {
+    text-align: left;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    margin: auto;
+    display:inline-block;
+
+    &:before{
+      content: '';
+      display: block;
+      width: 5px;
+      height: 12px;
+      border: solid $green;
+      border-width: 0 1px 1px 0;
+      transform: rotate(45deg);
+      position: absolute;
+      left: 2em;
+      margin-top: 5px;
+    }
+  }
+
+  &:after {
+    content: '';
+    background: $grey;
+    height: 70vh;
+    width: 100vw;
+    position: absolute;
+    margin-top: 80rem;
+    z-index: -1;
+
+    @media screen and (min-width: $xs) {
+      margin-top: 58rem;
+    }
+
+    @media screen and (min-width: $sm) {
+      margin-top: 65rem;
+    }
+
+    @media screen and (min-width: $md) {
+      margin-top: 55rem;
+    }
+  }
+}
+
+
+.sponsors {
+  padding-bottom: 2rem;
+
+  .sponsors__button {
+    padding: 3rem 0;
+  }
+
+  .sponsors__image {
+    img {
+      max-width: 100%;
+    }
+  }
+}

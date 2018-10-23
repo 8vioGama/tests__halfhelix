@@ -1,0 +1,31 @@
+//
+// Module_test
+//
+@import 'variables';
+@import 'mixins';
+
+// We can use CSS modules
+// but for now its disabled
+// make sure your css is inside this :global
+// Happy Styling! Pixel2HTML
+:global {
+  // screens:start
+  @import 'screens/base';
+  
+  @import 'screens/screen_1';
+  // screens:end
+
+  // components:start
+  @import 'components/buttons';
+  @import 'components/header';
+  @import 'components/footer';
+  // components:end
+
+  // typography:start
+  @import 'components/typography';
+  // typography:end
+
+  // global:start
+  @import 'global';
+  // global:end
+}

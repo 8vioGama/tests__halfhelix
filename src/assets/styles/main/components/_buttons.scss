@@ -1,0 +1,11 @@
+.btn {
+  padding: .8rem 2rem;
+  color: $blue;
+  border: 2px solid $grey--lighter;
+  
+  &.btn--alt {
+    color: $white;
+    background: $green;
+    border: none;
+  }
+}

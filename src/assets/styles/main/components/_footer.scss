@@ -1,0 +1,32 @@
+.footer-container {
+  background: $grey--darker;
+
+  .footer__app {
+    
+    img {
+      max-width: 60%;
+    }
+  }
+
+  .footer__links {
+    padding-left: 3em;
+  }
+
+  .footer__link {
+
+    p {
+      margin: 0;
+      padding-bottom: .5rem;
+      cursor: pointer;
+    }
+  }
+
+  .footer__language {
+    
+    .footer__dropdown-button {
+      padding-bottom: 3rem;
+      background: none !important;
+      border: none;
+    }
+  }
+}
